@@ -1,15 +1,20 @@
 package com.example.p03_classjournal;
 
-public class DailyCA {
+import java.io.Serializable;
+
+public class DailyCA  {
     	String dgGrade;
     	String moduleCode;
     	int week;
+    	private int pic;
 
     public DailyCA(String dgGrade, String moduleCode, int week) {
         this.dgGrade = dgGrade;
         this.moduleCode = moduleCode;
         this.week = week;
     }
+
+
 
     public String getDgGrade() {
         return dgGrade;
