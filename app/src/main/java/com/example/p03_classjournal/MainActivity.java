@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         ModuleCodesList = new ArrayList<String>();
         ModuleCodesList.add("C347");
 
-        ArrayAdapter<String>adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,ModuleCodesList);
-        lvModuleCodes.setAdapter(adapter);
+        aa = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,ModuleCodesList);
+        lvModuleCodes.setAdapter(aa);
 
         lvModuleCodes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent I = new Intent(MainActivity.this,ModuleGradesActivity.class);
-                I.putExtra("number",l);
+                I.putExtra("number",i);
                 startActivity(I);
             }
         });

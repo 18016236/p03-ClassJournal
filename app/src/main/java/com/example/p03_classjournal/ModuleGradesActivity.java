@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class ModuleGradesActivity extends AppCompatActivity {
     ListView lv;
     ArrayAdapter aa;
-    ArrayList<DailyCA> ModuleCodes,C347,C302;
+    ArrayList<DailyCA> ModuleCodes;
     Button btnInfo, btnSend, btnAdd;
 
     @Override

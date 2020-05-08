@@ -2,11 +2,11 @@ package com.example.p03_classjournal;
 
 import java.io.Serializable;
 
-public class DailyCA  {
+public class DailyCA implements Serializable  {
     	String dgGrade;
     	String moduleCode;
     	int week;
-    	private int pic;
+
 
     public DailyCA(String dgGrade, String moduleCode, int week) {
         this.dgGrade = dgGrade;
